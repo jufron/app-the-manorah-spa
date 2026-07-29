@@ -15,10 +15,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            UserSeeder::class,
+            SpaSeeder::class,
+        ]);
+
         User::factory()->create([
             'name' => 'Admin Menorah',
             'email' => 'admin@example.com',
-            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+            'password' => 'password',
         ]);
 
         User::factory(25)->create();

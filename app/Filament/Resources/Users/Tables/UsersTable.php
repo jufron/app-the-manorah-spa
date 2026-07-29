@@ -15,6 +15,10 @@ class UsersTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->defaultPaginationPageOption(10)
+            ->paginationPageOptions([10, 25, 50, 100])
+            ->defaultSort('name', 'asc')
+            ->deferLoading()
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
