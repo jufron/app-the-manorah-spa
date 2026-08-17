@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
     'slug',
     'description',
     'icon',
+    'image',
     'sort_order',
 ])]
 class ServiceCategory extends Model

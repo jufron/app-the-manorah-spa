@@ -13,9 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Native Vite Assets (Tailwind CSS v4 + Alpine.js) -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
+
+    <link href="{{ asset('build/assets/app-Bv2DHghc.css') }}" rel="stylesheet">
+    <script src="{{ asset('build/assets/app-DO2nEFzp.js') }}"></script>
 </head>
-<body class="min-h-screen bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-500 font-sans antialiased">
+<body class="min-h-screen bg-[#faf8f5] text-stone-900 dark:bg-[#12100e] dark:text-stone-100 transition-colors duration-500 font-sans antialiased">
     <!-- Navbar Component -->
     <x-frond.navbar />
 

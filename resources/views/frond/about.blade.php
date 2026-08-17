@@ -13,7 +13,7 @@
 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-serif text-stone-900 dark:text-white leading-tight">
                     Relaksasi Spa Mewah <br>
-                    <span class="bg-gradient-to-r from-amber-500 via-rose-400 to-amber-600 bg-clip-text text-transparent">
+                    <span class="bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 bg-clip-text text-transparent">
                         Tanpa Meninggalkan Rumah
                     </span>
                 </h1>

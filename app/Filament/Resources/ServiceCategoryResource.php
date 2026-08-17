@@ -52,6 +52,12 @@ class ServiceCategoryResource extends Resource
                     })
                     ->columnSpanFull(),
 
+                FormComponents\FileUpload::make('image')
+                    ->label('Gambar Banner Kategori')
+                    ->image()
+                    ->directory('categories')
+                    ->columnSpanFull(),
+
                 FormComponents\TextInput::make('sort_order')
                     ->label('Urutan Tampilan')
                     ->numeric()
@@ -70,6 +76,10 @@ class ServiceCategoryResource extends Resource
     {
         return $schema
             ->components([
+                InfolistComponents\ImageEntry::make('image')
+                    ->label('Gambar Kategori')
+                    ->columnSpanFull(),
+
                 InfolistComponents\TextEntry::make('name')
                     ->label('Nama Kategori')
                     ->weight('bold'),
@@ -114,6 +124,10 @@ class ServiceCategoryResource extends Resource
             ->defaultSort('name', 'asc')
             ->deferLoading()
             ->columns([
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Gambar')
+                    ->circular(),
+
                 Tables\Columns\TextColumn::make('name')
                     ->label('Nama Kategori')
                     ->searchable()

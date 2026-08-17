@@ -19,6 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Paksa semua generate URL dan asset menggunakan HTTPS
+        // if (request()->server->has('HTTP_X_FORWARDED_PROTO') == 'https' || app()->environment('local')) {
+        //     URL::forceScheme('https');
+        // }
     }
 }

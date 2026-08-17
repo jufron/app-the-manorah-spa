@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Widgets\LatestBookingsWidget;
 use App\Filament\Widgets\SpaStatsOverviewWidget;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
@@ -31,14 +30,27 @@ class AdminPanelProvider extends PanelProvider
             ->path('dashboard')
             ->login()
             ->brandName('The Manorah Spa & Wellness')
+            ->brandLogo(asset('img/logo.png'))
+            ->brandLogoHeight('3.5rem')
             ->colors([
-                'primary' => Color::Amber,
-                'secondary' => Color::Emerald,
+                'primary' => [
+                    50 => '#fbf8f0',
+                    100 => '#f5eccd',
+                    200 => '#ead79c',
+                    300 => '#ddbf6b',
+                    400 => '#d4ab48',
+                    500 => '#c69f59',
+                    600 => '#b88a3e',
+                    700 => '#93682d',
+                    800 => '#775228',
+                    900 => '#624324',
+                    950 => '#382411',
+                ],
+                'gray' => Color::Stone,
             ])
             ->font('Poppins')
             ->navigationGroups([
                 'Layanan & Harga',
-                'Pemesanan & Reservasi',
                 'Pengaturan Aplikasi',
             ])
             ->renderHook(
@@ -51,6 +63,9 @@ class AdminPanelProvider extends PanelProvider
                             background-color: rgba(15, 23, 42, 0.45) !important;
                             transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
                         }
+                        .fi-logo img {
+                            filter: drop-shadow(0 2px 8px rgba(184, 138, 62, 0.2));
+                        }
                     </style>
                 ')
             )
@@ -62,7 +77,6 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 SpaStatsOverviewWidget::class,
-                LatestBookingsWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

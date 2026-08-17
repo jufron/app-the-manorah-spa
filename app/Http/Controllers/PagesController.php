@@ -12,11 +12,41 @@ class PagesController extends Controller
 {
     public function index(): View
     {
-        $services = SpaService::where('is_active', true)->with('category')->get();
-        $categories = ServiceCategory::withCount('spaServices')->get();
+        $categories     = ServiceCategory::withCount(['spaServices' => function ($q) {
+                                                    $q->where('is_active', true);
+                                            }])->orderBy('sort_order', 'asc')->get();
+        $settings       = AppSetting::all()->pluck('value', 'key');
+        return view('frond.index', compact('categories', 'settings'));
+    }
+
+    public function services(): View
+    {
+        $categories     = ServiceCategory::withCount(['spaServices' => function ($q) {
+                                                    $q->where('is_active', true);
+                                            }])->orderBy('sort_order', 'asc')->get();
+
+        $services           = SpaService::where('is_active', true)->with('category')->get();
+        $selectedCategory   = null;
+        $settings           = AppSetting::all()->pluck('value', 'key');
+
+        return view('frond.services', compact('categories', 'services', 'selectedCategory', 'settings'));
+    }
+
+    public function categoryServices(ServiceCategory $category): View
+    {
+        $categories     = ServiceCategory::withCount(['spaServices' => function ($q) {
+                                        $q->where('is_active', true);
+                                    }])->orderBy('sort_order', 'asc')->get();
+
+        $services       = SpaService::where('is_active', true)
+                                    ->where('service_category_id', $category->id)
+                                    ->with('category')
+                                    ->get();
+
+        $selectedCategory = $category;
         $settings = AppSetting::all()->pluck('value', 'key');
 
-        return view('frond.index', compact('services', 'categories', 'settings'));
+        return view('frond.services', compact('categories', 'services', 'selectedCategory', 'settings'));
     }
 
     public function about(): View

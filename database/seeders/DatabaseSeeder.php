@@ -18,14 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             SpaSeeder::class,
+            FaqSeeder::class,
         ]);
-
-        User::factory()->create([
-            'name' => 'Admin Menorah',
-            'email' => 'admin@example.com',
-            'password' => 'password',
-        ]);
-
-        User::factory(25)->create();
     }
 }
