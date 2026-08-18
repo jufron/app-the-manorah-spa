@@ -3,7 +3,7 @@
     <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden transition-colors duration-500 lg:pt-20 pt-4">
       <!-- Background Image with Overlay -->
       <div class="absolute inset-0 z-0">
-        <img src="{{ asset('img/spa-hero.png') }}" alt="Premium Spa" class="w-full h-full object-cover">
+        <img src="{{ asset('img/spa-hero.png') }}" alt="Premium Spa" class="w-full h-full object-cover" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-[#faf8f5]/60 to-[#faf8f5] dark:from-black/70 dark:via-[#12100e]/85 dark:to-[#12100e] backdrop-blur-[2px]"></div>
       </div>
 
@@ -60,7 +60,7 @@
           <div class="lg:col-span-7 relative group">
             <!-- Main Image Card -->
             <div class="relative z-10 overflow-hidden rounded-[48px] shadow-2xl border border-stone-200/80 dark:border-stone-800/80 aspect-[4/3] lg:aspect-auto">
-              <img src="{{ asset('img/home-service.png') }}" alt="Home Service Spa" class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-105">
+              <img src="{{ asset('img/home-service.png') }}" alt="Home Service Spa" class="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-105" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
 
@@ -82,7 +82,7 @@
 
             <!-- Secondary Decorative Image -->
             <div class="absolute -top-12 -left-8 hidden md:block w-48 h-64 z-0 overflow-hidden rounded-[32px] shadow-xl border border-stone-200/50 dark:border-stone-800/50 rotate-[-6deg]">
-                <img src="{{ asset('img/beauty-products.png') }}" alt="Beauty Products" class="w-full h-full object-cover">
+                <img src="{{ asset('img/beauty-products.png') }}" alt="Beauty Products" class="w-full h-full object-cover" loading="lazy">
                 <div class="absolute inset-0 bg-amber-500/10 mix-blend-overlay"></div>
             </div>
           </div>
@@ -157,6 +157,7 @@
                                 @if ($cat->image)
                                     <img src="{{ asset(str_starts_with($cat->image, 'http') || str_starts_with($cat->image, 'img/') ? $cat->image : 'storage/' . $cat->image) }}"
                                          alt="{{ $cat->name }}"
+                                         loading="lazy"
                                          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                                 @else
@@ -211,58 +212,4 @@
         </div>
     </section>
 
-    <!-- CONTACT & LOCATION SECTION (#contact) -->
-    <section id="contact" class="py-24 bg-[#141210] text-white relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-6 space-y-6">
-                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-400">Hubungi & Reservasi</span>
-                    <h2 class="text-3xl sm:text-4xl font-black font-serif">
-                        Jadwalkan Waktu Relaksasi Anda
-                    </h2>
-                    <p class="text-stone-300 leading-relaxed font-medium">
-                        Hubungi kami melalui WhatsApp untuk reservasi langsung atau konsultasi paket spa yang paling pas untuk kebutuhan Anda.
-                    </p>
-
-                    <div class="space-y-4 pt-4">
-                        <div class="flex items-center space-x-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-                            <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">
-                                📍
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-bold text-amber-400">Alamat Spa</h4>
-                                <p class="text-sm text-stone-300">{{ $settings['address'] ?? 'Jl. Sunset Road No. 88, Seminyak, Bali' }}</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center space-x-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-                            <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold shrink-0">
-                                🕒
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-bold text-amber-400">Jam Operasional</h4>
-                                <p class="text-sm text-stone-300">{{ $settings['opening_hours'] ?? 'Senin - Minggu: 09:00 - 22:00 WITA' }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-6">
-                    <div class="p-8 rounded-3xl bg-gradient-to-tr from-stone-900 to-amber-950 border border-amber-500/20 text-center space-y-6 shadow-2xl">
-                        <h3 class="text-2xl font-black font-serif">Reservasi Mudah & Cepat</h3>
-                        <p class="text-sm text-stone-300">Respon cepat dari customer service kami dalam waktu kurang dari 5 menit.</p>
-                        
-                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Halo%20The%20Manorah%20Spa,%20saya%20ingin%20reservasi."
-                           target="_blank"
-                           class="inline-flex items-center justify-center space-x-3 w-full py-4 bg-[#25D366] hover:bg-[#20ba56] text-white font-bold rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 active:scale-95">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.942-.001-3.841-.48-5.538-1.391l-6.459 1.699zm6.335-3.532c1.546.916 3.463 1.4 5.473 1.402 5.512 0 10.005-4.493 10.008-10.007.001-2.672-1.041-5.183-2.935-7.078-1.892-1.894-4.403-2.933-7.075-2.933-5.515 0-10.01 4.495-10.013 10.01-.001 1.917.5 3.775 1.447 5.389l-1.085 3.963 4.18-1.1zm11.312-7.105c-.31-.156-1.834-.905-2.112-1.006-.277-.101-.48-.151-.68.151-.2.302-.777.981-.952 1.182-.176.201-.351.227-.662.071-.31-.156-1.31-.483-2.496-1.541-.923-.824-1.545-1.841-1.725-2.143-.18-.302-.019-.465.136-.619.139-.138.31-.362.465-.544.155-.181.206-.31.31-.517.103-.207.051-.387-.026-.543-.077-.156-.68-1.638-.932-2.242-.245-.588-.493-.509-.68-.518-.176-.009-.377-.01-.578-.01-.201 0-.529.076-.806.377-.277.302-1.058 1.032-1.058 2.515 0 1.483 1.079 2.914 1.229 3.116.15.201 2.125 3.245 5.148 4.553.719.311 1.28.497 1.717.636.722.227 1.378.195 1.898.117.58-.087 1.834-.75 2.091-1.474.258-.724.258-1.344.181-1.474-.077-.13-.284-.207-.593-.364z"/>
-                            </svg>
-                            <span>Chat WhatsApp Sekarang</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </x-layouts.app>

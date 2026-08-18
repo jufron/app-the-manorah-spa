@@ -56,7 +56,7 @@
                             <!-- Service Thumbnail Header -->
                             <div class="h-56 bg-gradient-to-tr from-stone-900 via-amber-950 to-stone-800 relative overflow-hidden flex items-center justify-center p-6 text-white">
                                 @if ($service->image)
-                                    <img src="{{ asset(str_starts_with($service->image, 'http') || str_starts_with($service->image, 'img/') ? $service->image : 'storage/' . $service->image) }}" alt="{{ $service->name }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                                    <img src="{{ asset(str_starts_with($service->image, 'http') || str_starts_with($service->image, 'img/') ? $service->image : 'storage/' . $service->image) }}" alt="{{ $service->name }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                     <div class="absolute inset-0 bg-black/40"></div>
                                 @else
                                     <div class="absolute inset-0 bg-gradient-to-tr from-amber-600/30 to-amber-900/30"></div>

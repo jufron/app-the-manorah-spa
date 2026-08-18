@@ -7,6 +7,20 @@
     <title>{{ $title ?? 'The Manorah Spa & Wellness - Sanctuary of Healing & Luxury Relaxation' }}</title>
     <meta name="description" content="Katalog layanan spa mewah, massage tradisional, aromatherapy, dan body treatment di Seminyak, Bali.">
 
+    <link rel="icon" href="{{ asset('img/icon/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('img/icon/android-chrome-512x512.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('img/icon/android-chrome-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/icon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/icon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('img/icon/site.webmanifest') }}">
+
+    <!-- Warna tema tab (Chrome, Edge, dll) -->
+    <meta name="theme-color" content="#c69f59">
+    
+    <!-- Warna tab di Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
