@@ -39,7 +39,7 @@
         </div>
         
         <button @click="scrollToTop()" 
-                class="w-14 h-14 glass flex items-center justify-center rounded-2xl text-amber-600 dark:text-amber-400 shadow-2xl hover:scale-110 active:scale-95 transition-all duration-500 border border-amber-500/20 group-hover:bg-amber-600 group-hover:text-white">
+                class="w-14 h-14 glass flex items-center justify-center rounded-2xl text-[#D96B58] dark:text-[#f38d76] shadow-2xl hover:scale-110 active:scale-95 transition-all duration-500 border border-[#E9806E]/20 group-hover:bg-[#D96B58] group-hover:text-white">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
             </svg>

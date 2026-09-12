@@ -27,7 +27,7 @@ class FaqSeeder extends Seeder
                 'is_active' => true,
             ],
             [
-                'question' => 'Area mana saja yang dapat dilayani oleh The Manorah Spa?',
+                'question' => 'Area mana saja yang dapat dilayani oleh The Menorah Spa?',
                 'answer' => 'Kami melayani layanan home & villa service di berbagai wilayah Bali, meliputi Seminyak, Canggu, Kuta, Denpasar, Sanur, Ubud, Nusa Dua, dan sekitarnya.',
                 'sort_order' => 3,
                 'is_active' => true,

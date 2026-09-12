@@ -1,19 +1,19 @@
-<x-layouts.app title="About Home Spa Services - The Manorah Spa">
+<x-layouts.app title="About Home Spa Services - The Menorah Beauty">
     <!-- HERO SECTION -->
     <section class="relative pt-32 pb-20 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-amber-500/10 via-rose-500/5 to-transparent dark:from-amber-950/20 dark:to-stone-950 -z-10"></div>
-        <div class="absolute top-1/3 left-10 w-96 h-96 bg-amber-400/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#E9806E]/10 via-transparent to-transparent dark:from-[#E9806E]/20 dark:to-[#121214] -z-10"></div>
+        <div class="absolute top-1/3 left-10 w-96 h-96 bg-[#E9806E]/20 rounded-full blur-[120px] -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-6">
-                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-bold tracking-widest uppercase border border-amber-500/20">
-                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-[#E9806E]/10 text-[#D96B58] dark:text-[#f38d76] text-xs font-bold tracking-widest uppercase border border-[#E9806E]/20">
+                    <span class="w-2 h-2 rounded-full bg-[#E9806E] animate-pulse"></span>
                     <span>Home & Villa On-Call Spa Service</span>
                 </div>
 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-serif text-stone-900 dark:text-white leading-tight">
                     Luxury Spa Relaxation <br>
-                    <span class="bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 bg-clip-text text-transparent">
+                    <span class="bg-gradient-to-r from-[#D96B58] via-[#f38d76] to-[#D96B58] bg-clip-text text-transparent">
                         Without Leaving Home
                     </span>
                 </h1>
@@ -26,10 +26,10 @@
     </section>
 
     <!-- WHY HOME SPA SECTION -->
-    <section class="py-20 bg-white dark:bg-stone-900 transition-colors duration-500">
+    <section class="py-20 bg-white dark:bg-[#1A1A1E] transition-colors duration-500">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-500">Service Concept</span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#D96B58] dark:text-[#f38d76]">Service Concept</span>
                 <h2 class="text-3xl sm:text-4xl font-black font-serif text-stone-900 dark:text-white">
                     Why Choose Home Call Spa?
                 </h2>
@@ -37,8 +37,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Feature 1 -->
-                <div class="p-8 rounded-3xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl font-bold">
+                <div class="p-8 rounded-3xl bg-[#FAF6F0] dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E9806E]/10 text-[#D96B58] dark:text-[#f38d76] flex items-center justify-center text-2xl font-bold">
                         🏡
                     </div>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">No Traffic & No Queues</h3>
@@ -48,8 +48,8 @@
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="p-8 rounded-3xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl font-bold">
+                <div class="p-8 rounded-3xl bg-[#FAF6F0] dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E9806E]/10 text-[#D96B58] dark:text-[#f38d76] flex items-center justify-center text-2xl font-bold">
                         🧰
                     </div>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">Complete Equipment</h3>
@@ -59,8 +59,8 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="p-8 rounded-3xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl font-bold">
+                <div class="p-8 rounded-3xl bg-[#FAF6F0] dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E9806E]/10 text-[#D96B58] dark:text-[#f38d76] flex items-center justify-center text-2xl font-bold">
                         😴
                     </div>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">Continuous Relaxation</h3>
@@ -70,8 +70,8 @@
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="p-8 rounded-3xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl font-bold">
+                <div class="p-8 rounded-3xl bg-[#FAF6F0] dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#E9806E]/10 text-[#D96B58] dark:text-[#f38d76] flex items-center justify-center text-2xl font-bold">
                         🌿
                     </div>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">100% Organic Products</h3>
@@ -87,7 +87,7 @@
     <section class="py-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto space-y-4 mb-20">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-500">Service Workflow</span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#D96B58] dark:text-[#f38d76]">Service Workflow</span>
                 <h2 class="text-3xl sm:text-4xl font-black font-serif text-stone-900 dark:text-white">
                     4 Simple Steps to Book Home Spa
                 </h2>
@@ -95,8 +95,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
                 <!-- Step 1 -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 relative">
-                    <span class="text-5xl font-black font-serif text-amber-500/20 absolute top-4 right-6">01</span>
+                <div class="p-6 rounded-3xl bg-white dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 relative">
+                    <span class="text-5xl font-black font-serif text-[#E9806E]/20 absolute top-4 right-6">01</span>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">Choose Treatment</h3>
                     <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
                         Select your preferred treatment (Traditional Massage, Body Scrub, Facial, or Combination Package).
@@ -104,8 +104,8 @@
                 </div>
 
                 <!-- Step 2 -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 relative">
-                    <span class="text-5xl font-black font-serif text-amber-500/20 absolute top-4 right-6">02</span>
+                <div class="p-6 rounded-3xl bg-white dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 relative">
+                    <span class="text-5xl font-black font-serif text-[#E9806E]/20 absolute top-4 right-6">02</span>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">Contact via WhatsApp</h3>
                     <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
                         Send a message to our customer service with your desired time and full address of your home or villa.
@@ -113,8 +113,8 @@
                 </div>
 
                 <!-- Step 3 -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 relative">
-                    <span class="text-5xl font-black font-serif text-amber-500/20 absolute top-4 right-6">03</span>
+                <div class="p-6 rounded-3xl bg-white dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 relative">
+                    <span class="text-5xl font-black font-serif text-[#E9806E]/20 absolute top-4 right-6">03</span>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">Therapist Arrives</h3>
                     <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
                         Our trained therapist arrives 15 minutes early equipped with sterile supplies & aromatherapy.
@@ -122,8 +122,8 @@
                 </div>
 
                 <!-- Step 4 -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 relative">
-                    <span class="text-5xl font-black font-serif text-amber-500/20 absolute top-4 right-6">04</span>
+                <div class="p-6 rounded-3xl bg-white dark:bg-[#1E1E22] border border-stone-200 dark:border-stone-800 space-y-4 relative">
+                    <span class="text-5xl font-black font-serif text-[#E9806E]/20 absolute top-4 right-6">04</span>
                     <h3 class="text-xl font-bold font-serif text-stone-900 dark:text-white">Enjoy Relaxation</h3>
                     <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
                         Enjoy a soothing massage & body treatment session directly in the privacy of your own room.
@@ -134,16 +134,16 @@
     </section>
 
     <!-- AREA COVERAGE SECTION -->
-    <section class="py-20 bg-stone-900 text-white">
+    <section class="py-20 bg-stone-900 dark:bg-[#121214] text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-6 space-y-6">
-                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-400">Service Coverage Area</span>
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#f38d76]">Service Coverage Area</span>
                     <h2 class="text-3xl sm:text-4xl font-black font-serif">
                         Ready to Serve Bali & Surrounding Areas
                     </h2>
                     <p class="text-stone-300 leading-relaxed font-medium">
-                        The Manorah Spa call-out spa service covers popular areas across Bali. Our therapists are ready to visit your residence, apartment, hotel, or private villa.
+                        The Menorah Beauty call-out spa service covers popular areas across Bali. Our therapists are ready to visit your residence, apartment, hotel, or private villa.
                     </p>
 
                     <!-- Area Badges -->
@@ -159,11 +159,11 @@
                 </div>
 
                 <div class="lg:col-span-6">
-                    <div class="p-8 rounded-3xl bg-gradient-to-tr from-stone-800 via-amber-950 to-stone-900 border border-white/10 text-center space-y-6 shadow-2xl">
+                    <div class="p-8 rounded-3xl bg-gradient-to-tr from-[#121214] via-[#4A1E17] to-stone-900 border border-[#E9806E]/20 text-center space-y-6 shadow-2xl">
                         <h3 class="text-2xl font-black font-serif text-white">Want to Book Today?</h3>
                         <p class="text-sm text-stone-300">Book now to secure the best therapist schedule according to your convenience.</p>
                         
-                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Hello%20The%20Manorah%20Spa,%20I%20would%20like%20to%20book%20a%20home%20spa%20treatment."
+                        <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Hello%20The%20Menorah%20Beauty,%20I%20would%20like%20to%20book%20a%20home%20spa%20treatment."
                            target="_blank"
                            class="inline-flex items-center justify-center space-x-3 w-full py-4 bg-[#25D366] hover:bg-[#20ba56] text-white font-bold rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 active:scale-95">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

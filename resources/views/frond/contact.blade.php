@@ -1,20 +1,20 @@
-<x-layouts.app title="Contact & Location - The Manorah Spa">
+<x-layouts.app title="Contact & Location - The Menorah Beauty">
     <!-- HERO SECTION -->
     <section class="relative pt-32 pb-16 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-amber-500/10 via-rose-500/5 to-transparent dark:from-amber-950/20 dark:to-stone-950 -z-10"></div>
-        <div class="absolute top-1/4 left-10 w-96 h-96 bg-amber-400/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#D96B58]/10 via-rose-500/5 to-transparent dark:from-[#D96B58]/20 dark:to-stone-950 -z-10"></div>
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-[#B497D6]/20 rounded-full blur-[120px] -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4">
-                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-bold tracking-widest uppercase border border-amber-500/20">
-                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-[#E9806E]/10 text-[#D96B58] dark:text-[#f38d76] text-xs font-bold tracking-widest uppercase border border-[#E9806E]/20">
+                    <span class="w-2 h-2 rounded-full bg-[#E9806E] animate-pulse"></span>
                     <span>Contact Information & Service Hub Location</span>
                 </div>
 
                 <h1 class="text-4xl sm:text-5xl font-black font-serif text-stone-900 dark:text-white leading-tight">
                     Contact The <br>
-                    <span class="bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 bg-clip-text text-transparent">
-                        Manorah Spa Team
+                    <span class="bg-gradient-to-r from-[#C55543] via-[#E9806E] to-[#D96B58] bg-clip-text text-transparent">
+                        Menorah Beauty Team
                     </span>
                 </h1>
 
@@ -24,7 +24,7 @@
 
                 <!-- Direct WhatsApp Big Banner CTA -->
                 <div class="pt-4 flex justify-center">
-                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Hello%20The%20Manorah%20Spa,%20I%20would%20like%20to%20book%20a%20home%20spa%20service."
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Hello%20The%20Menorah%20Beauty,%20I%20would%20like%20to%20book%20a%20home%20spa%20service."
                        target="_blank"
                        class="px-8 py-4 bg-[#25D366] hover:bg-[#20ba56] text-white rounded-full font-bold shadow-xl shadow-green-500/20 flex items-center space-x-3 transition-all duration-300 hover:scale-105 active:scale-95 text-base">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- WhatsApp & Telepon -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300 shadow-lg">
+                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300 shadow-lg">
                     <div class="w-12 h-12 rounded-2xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center font-bold text-2xl">
                         💬
                     </div>
@@ -51,14 +51,14 @@
                         <h3 class="text-lg font-bold font-serif text-stone-900 dark:text-white">WhatsApp Direct</h3>
                         <p class="text-xs text-stone-500 dark:text-stone-400">Fast response in less than 5 minutes</p>
                     </div>
-                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}" target="_blank" class="text-sm font-bold text-amber-500 hover:underline block">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}" target="_blank" class="text-sm font-bold text-[#D96B58] hover:underline block">
                         +{{ $settings['whatsapp_number'] ?? '62 812-3456-7890' }}
                     </a>
                 </div>
 
                 <!-- Alamat & Service Hub -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300 shadow-lg">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold text-2xl">
+                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#B497D6]/60 transition-all duration-300 shadow-lg">
+                    <div class="w-12 h-12 rounded-2xl bg-[#B497D6]/15 text-[#8E79B8] dark:text-[#B497D6] flex items-center justify-center font-bold text-2xl">
                         📍
                     </div>
                     <div>
@@ -71,8 +71,8 @@
                 </div>
 
                 <!-- Jam Operasional -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300 shadow-lg">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold text-2xl">
+                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300 shadow-lg">
+                    <div class="w-12 h-12 rounded-2xl bg-[#E9806E]/10 text-[#D96B58] flex items-center justify-center font-bold text-2xl">
                         🕒
                     </div>
                     <div>
@@ -85,15 +85,15 @@
                 </div>
 
                 <!-- Email Resmi -->
-                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-amber-500/50 transition-all duration-300 shadow-lg">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold text-2xl">
+                <div class="p-6 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 space-y-4 hover:border-[#E9806E]/50 transition-all duration-300 shadow-lg">
+                    <div class="w-12 h-12 rounded-2xl bg-[#E9806E]/10 text-[#D96B58] flex items-center justify-center font-bold text-2xl">
                         ✉️
                     </div>
                     <div>
                         <h3 class="text-lg font-bold font-serif text-stone-900 dark:text-white">Inquiry Email</h3>
                         <p class="text-xs text-stone-500 dark:text-stone-400">For official inquiries / licensing</p>
                     </div>
-                    <a href="mailto:info@themanorahspa.com" class="text-sm font-bold text-amber-500 hover:underline block">
+                    <a href="mailto:info@themanorahspa.com" class="text-sm font-bold text-[#D96B58] hover:underline block">
                         info@themanorahspa.com
                     </a>
                 </div>
@@ -106,7 +106,7 @@
     <section class="py-16 bg-white dark:bg-stone-900/50 transition-colors duration-500">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 space-y-8">
             <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-500">Map & Service Hub Area</span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#D96B58]">Map & Service Hub Area</span>
                 <h2 class="text-3xl font-black font-serif text-stone-900 dark:text-white">
                     Service Hub Location (Seminyak, Bali)
                 </h2>
@@ -127,7 +127,7 @@
     <section class="py-20 bg-stone-50 dark:bg-stone-900">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 space-y-12">
             <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-500">Help & Information</span>
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-[#D96B58]">Help & Information</span>
                 <h2 class="text-3xl sm:text-4xl font-black font-serif text-stone-900 dark:text-white">
                     Frequently Asked Questions (FAQ)
                 </h2>
@@ -140,7 +140,7 @@
                 @forelse ($faqs as $index => $faq)
                     <div class="p-6 rounded-3xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 space-y-3 shadow-md">
                         <div class="flex items-center space-x-3">
-                            <span class="w-8 h-8 rounded-full bg-amber-500/10 text-amber-500 font-bold flex items-center justify-center text-sm shrink-0">
+                            <span class="w-8 h-8 rounded-full bg-[#E9806E]/10 text-[#D96B58] font-bold flex items-center justify-center text-sm shrink-0">
                                 Q{{ $index + 1 }}
                             </span>
                             <h4 class="text-base font-bold font-serif text-stone-900 dark:text-white">{{ $faq->question }}</h4>
@@ -164,7 +164,7 @@
             <h2 class="text-3xl font-black font-serif">Ready to Experience Spa Relaxation at Home?</h2>
             <p class="text-stone-300 max-w-xl mx-auto font-medium">Click the WhatsApp button below to connect directly with our customer service.</p>
             <div class="flex justify-center">
-                <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Hello%20The%20Manorah%20Spa,%20I%20would%20like%20to%20make%20a%20reservation."
+                <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $settings['whatsapp_number'] ?? '6281234567890') }}?text=Hello%20The%20Menorah%20Beauty,%20I%20would%20like%20to%20make%20a%20reservation."
                    target="_blank"
                    class="px-8 py-4 bg-[#25D366] hover:bg-[#20ba56] text-white font-bold rounded-full shadow-xl flex items-center space-x-3 transition-all duration-300 hover:scale-105 active:scale-95">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

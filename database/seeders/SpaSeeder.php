@@ -71,9 +71,9 @@ class SpaSeeder extends Seeder
         // Massage Category Services
         SpaService::create([
             'service_category_id' => $massageCat->id,
-            'name' => 'Manorah Signature Swedish Massage',
-            'slug' => 'manorah-signature-swedish-massage',
-            'description' => 'Manorah’s signature therapeutic massage combining Swedish strokes and pure organic aromatherapy essential oils for ultimate muscle tension relief.',
+            'name' => 'Menorah Signature Swedish Massage',
+            'slug' => 'menorah-signature-swedish-massage',
+            'description' => 'Menorah’s signature therapeutic massage combining Swedish strokes and pure organic aromatherapy essential oils for ultimate muscle tension relief.',
             'duration_minutes' => 90,
             'price' => 350000,
             'image' => 'img/home-service.png',
@@ -158,8 +158,8 @@ class SpaSeeder extends Seeder
         // Nail Art Services
         SpaService::create([
             'service_category_id' => $nailCat->id,
-            'name' => 'Manorah Luxury Gel Manicure & Pedicure',
-            'slug' => 'manorah-luxury-gel-manicure-pedicure',
+            'name' => 'Menorah Luxury Gel Manicure & Pedicure',
+            'slug' => 'menorah-luxury-gel-manicure-pedicure',
             'description' => 'Meticulous nail shaping, cuticle care, organic hand scrub, and long-lasting non-toxic gel polish in your favorite luxury shade.',
             'duration_minutes' => 75,
             'price' => 300000,
@@ -235,7 +235,7 @@ class SpaSeeder extends Seeder
             [
                 'key' => 'site_name',
                 'label' => 'Nama Website / Spa',
-                'value' => 'The Manorah Spa & Wellness',
+                'value' => 'The Menorah Spa & Wellness',
                 'type' => 'text',
                 'group' => 'general',
             ],
@@ -256,7 +256,7 @@ class SpaSeeder extends Seeder
             [
                 'key' => 'email_contact',
                 'label' => 'Email Kontak',
-                'value' => 'info@themanorahspa.com',
+                'value' => 'info@themenorahspa.com',
                 'type' => 'text',
                 'group' => 'contact',
             ],

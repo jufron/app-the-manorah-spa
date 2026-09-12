@@ -29,22 +29,35 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('dashboard')
             ->login()
-            ->brandName('The Manorah Spa & Wellness')
-            ->brandLogo(asset('img/logo.png'))
-            ->brandLogoHeight('3.5rem')
+            ->brandName('The Menorah Spa & Wellness')
+            ->brandLogo(asset('img/logo-brand.png'))
+            ->brandLogoHeight('2.5rem')
             ->colors([
                 'primary' => [
-                    50 => '#fbf8f0',
-                    100 => '#f5eccd',
-                    200 => '#ead79c',
-                    300 => '#ddbf6b',
-                    400 => '#d4ab48',
-                    500 => '#c69f59',
-                    600 => '#b88a3e',
-                    700 => '#93682d',
-                    800 => '#775228',
-                    900 => '#624324',
-                    950 => '#382411',
+                    50 => '#fdf5f2',
+                    100 => '#fbe3dc',
+                    200 => '#f8c4b8',
+                    300 => '#f38d76',
+                    400 => '#f09078',
+                    500 => '#D96B58',
+                    600 => '#C55543',
+                    700 => '#a84536',
+                    800 => '#8a3a2e',
+                    900 => '#71332a',
+                    950 => '#3d1711',
+                ],
+                'lavender' => [
+                    50 => '#f7f4fb',
+                    100 => '#ece5f6',
+                    200 => '#dccfee',
+                    300 => '#c4aedf',
+                    400 => '#B497D6',
+                    500 => '#9c7cc4',
+                    600 => '#8E79B8',
+                    700 => '#7B6385',
+                    800 => '#634f6e',
+                    900 => '#52435c',
+                    950 => '#33293c',
                 ],
                 'gray' => Color::Stone,
             ])
@@ -64,7 +77,10 @@ class AdminPanelProvider extends PanelProvider
                             transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
                         }
                         .fi-logo img {
-                            filter: drop-shadow(0 2px 8px rgba(184, 138, 62, 0.2));
+                            filter: drop-shadow(0 2px 8px rgba(217, 107, 88, 0.25));
+                        }
+                        .fi-simple-layout .fi-logo {
+                            height: 7rem !important;
                         }
                     </style>
                 ')

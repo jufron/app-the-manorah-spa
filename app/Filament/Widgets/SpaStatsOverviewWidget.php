@@ -23,12 +23,12 @@ class SpaStatsOverviewWidget extends BaseWidget
             Stat::make('Layanan Spa Aktif', $totalServices . ' Paket')
                 ->description('Total perawatan spa yang tersedia')
                 ->descriptionIcon('heroicon-m-sparkles')
-                ->color('amber'),
+                ->color('primary'),
 
             Stat::make('Layanan Unggulan', $featuredServices . ' Paket')
                 ->description('Paket spa pilihan (Featured)')
                 ->descriptionIcon('heroicon-m-star')
-                ->color('rose'),
+                ->color('lavender'),
 
             Stat::make('Kategori Perawatan', $totalCategories . ' Kategori')
                 ->description('Kelompok kategori layanan spa')
